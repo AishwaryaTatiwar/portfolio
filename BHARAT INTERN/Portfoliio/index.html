@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/82f0757c37.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="portfolio.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" style="color: aliceblue;" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="color: aliceblue;" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">Enthusiastic learner
+            <h1>Hi! I am <span>Aishwarya</span> Tatiwar from Nagpur.</h1>
+        </div>
+        </div>
+    </div>
+   <!-- ----------------------- about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aishwarya.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate web developer with a keen eye for design and a 
+                        flair for creating seamless,user-friendly digital experiences.
+                        With a strong foundation in front-end and back-end technologies,I specialize in turning ideas into beautifully crafted websites and web applications.
+                    </p>
+                    <div class="tab-titles">
+                        <div class="tab-links" >Skills</div>
+                        <div class="tab-links">Education</div>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>C</span><br>4⭐-Hackerrank</li>
+                            <li><span>Problem Solving</span><br>DSA</li>
+                            <li><span>Python</span></li>
+                            <li><span>Java</span><br>OOP-Object Oriented Programming</li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>ReactJS</span></li>
+                            <li><span>PHP</span></li>
+                            <li><span>Laravel</span></li>
+                        </ul>
+                        <ul>
+                            <li><span>10th grade</span><br>97.4%</li>
+                            <li><span>12th grade</span><br>91.2%<li>
+                            <li><span>MHTCET</span><br>97.2%ile</li>
+                            <li><span>CGPA</span><br>9.19</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------projects----------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code" style="color:#fff"></i>
+                    <h2>Restaurant Website</h2>
+                    <p>Built a website of haldiram-planet food using HTML and CSS</p>
+                    <a href="https://github.com/AishwaryaTatiwar/restaurant">Github repository<a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"style="color:#fff"></i>
+                    <h2>Tourism Website</h2>
+                    <p>Built a tourism website using HTML and CSS</p>
+                    <a href="https://github.com/AishwaryaTatiwar/tourism_web">Github repository<a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store" style="color:#fff"></i>
+                    <h2>Event Management Website</h2>
+                    <p>Built a web application using Laravel for event management in which one can create event, register for any event and browse upcoming events.</p>
+                    <a href="https://github.com/PiyushVyas13/laravel-event-app">Github repository<a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------certifications------------------- -->
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title" id="mycer">My Certifications</h1>
+            <div id="certificate-container">
+            <img src="linux.png" class="cer">
+            <img src="blockchain.png" class="cer">
+            <img src="CourseraML_page-0001.jpg" class="cer">
+            </div>
+    </div>
+    <!-- ---------------------------contact------------------------------------>
+    <div id="contact">
+          <div class="container1">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>aishwaryatatiwar@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9322991809</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/aishwaryatatiwar/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aishwarya-tatiwar-04303925a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.threads.net/@aishwaryatatiwar"><i class="fa-brands fa-threads"></i></a>
+                    </div>
+                    <a href="cvresume (1).pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+          </div>
+    </div>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openMenu(){
+        sidemenu.style.right="0";
+    }
+    function closeMenu(){
+        sidemenu.style.right="-200px";
+    }
+</script> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6ysUpnkOCwTawnXnV3RVrafxhVGTBU3rC48N9K2Pbmu_mEHpPYMxwApb7SblOioRteg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=" "
+            },5000)
+            form.reset()
+        }
+        )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>     
+</body>
+</html>
